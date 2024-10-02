@@ -7,12 +7,12 @@ namespace OnlineShop.NotificationService
     {
         public void Send(Notification notification)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(notification.Message);
         }
 
-        public Task SendAsync(Notification notification)
+        public async Task SendAsync(Notification notification)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(notification.Message);
         }
     }
 }

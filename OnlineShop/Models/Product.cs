@@ -1,4 +1,6 @@
-﻿namespace OnlineShop.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OnlineShop.Models
 {
     public class Product
     {
@@ -7,6 +9,8 @@
         public string Description { get; set; }
         public decimal Cost { get; set; }
         public string[] PhotosKeys { get; set; }
-        public int Count { get; set; }
+
+        [Timestamp]
+        public int CountOnStock { get; set; }
     }
 }
